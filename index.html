@@ -1,0 +1,93 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icons8-abrir-pasta-50.png" type="image/x-icon">
+  <title>Login</title>
+  <style>
+    /* ... (estilos anteriores) */
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    div.login-container{
+      width: 200px;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%; /* Alterado para 80% em telas grandes */
+      max-width: 400px; /* Adicionado para evitar que o contêiner fique muito largo */
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3ac22a;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+   
+    @media only screen and (min-width: 600px) {
+      /* Estilos específicos para telas maiores, como tablets */
+      .login-container {
+        width: 60%; /* Reduzido para 60% em telas maiores */
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      /* Estilos específicos para telas maiores, como tablets em modo paisagem e computadores */
+      menu-container {
+        width: 40%; /* Reduzido ainda mais para 40% em telas maiores */
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container" id="loginContainer">
+    <h2>Login</h2>
+    <form class="login-form" onsubmit="validateLogin(event)">
+      <input type="text" id="username" placeholder="Usuário" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="login.js"></script>
+  
+
+</body>
+</html>
